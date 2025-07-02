@@ -1,12 +1,11 @@
-package com.example.fitness.controller;
+package com.example.fitness;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@RestController
-public class FitnessController {
-    @GetMapping("/api/hello")
-    public String greet() {
-        return "Welcome to the Fitness App Backend!";
+@SpringBootApplication
+public class FitnessApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(FitnessApplication.class, args);
     }
 }
